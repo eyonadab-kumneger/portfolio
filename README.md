@@ -11,8 +11,8 @@
 - *Contact*: Easy ways to reach me, including a form.
 - *Interactive design*: Smooth scrolling, animations, and a responsive layout.
 - *Minimalist theme*: Clean, professional, and client-friendly aesthetic.
-#Technologies Used
-#Frontend:
+# Technologies Used
+# Frontend:
 - *HTML5*
 - *CSS3 (with modular styling for each component)*
 - *JavaScript (ES6+)*
