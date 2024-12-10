@@ -1,0 +1,13 @@
+.home-section {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #fff;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+}
+
+.home-section p {
+  font-size: 1.5rem;
+}

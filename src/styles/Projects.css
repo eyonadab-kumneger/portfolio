@@ -1,0 +1,13 @@
+.projects-section {
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+}
+
+.projects-section p {
+  font-size: 1.2rem;
+}
