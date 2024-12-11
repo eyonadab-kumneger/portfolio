@@ -1,27 +1,27 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './styles/index.css'; // Import CSS
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <div className="App">
-        <Switch>
-          <Route path="/portfolio" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/skills" component={Skills} />
-          {/* Add other routes as needed */}
-        </Switch>
+    <Router basename="/portfolio">
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+        </Routes>
       </div>
     </Router>
   );
-}
+};
 
 export default App;
