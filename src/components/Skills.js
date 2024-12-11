@@ -1,20 +1,24 @@
-import React from 'react';
+import React from "react";
+import "../styles/Skills.css";
 
 const Skills = () => {
   return (
-    <section>
+    <div className="skills-container">
       <h2>My Skills</h2>
-      <ul className="skills-list">
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
         <li>React</li>
         <li>Node.js</li>
-        <li>JavaScript</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>MongoDB</li>
-        <li>Git</li>
-        <li>Express.js</li>
+        <li>Java</li>
+        <li>PostgreSQL</li>
+        <li>Git versioning</li>
+        <li>Gitlab/Jenkins</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
       </ul>
-    </section>
+    </div>
   );
 };
 

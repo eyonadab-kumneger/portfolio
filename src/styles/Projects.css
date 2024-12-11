@@ -11,3 +11,24 @@
 .projects-section p {
   font-size: 1.2rem;
 }
+
+ul {
+  list-style-type: none; /* Remove default list bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+a {
+  color: inherit; /* Inherit color from parent element */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Set font size */
+}
+
+a:hover {
+  color: #007bff; /* Change the color on hover (you can choose any color) */
+  text-decoration: none; /* Keep underline off on hover */
+}
+
+li {
+  margin: 10px 0; /* Space out the list items */
+}
+

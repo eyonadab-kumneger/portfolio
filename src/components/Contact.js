@@ -18,9 +18,7 @@ const Contact = () => {
       [name]: value,
     });
 
-    // Real-time validation for Name and Email
     if (name === "name") {
-      // Allow only alphabets and spaces in Name
       if (/[^A-Za-z\s]/.test(value)) {
         setErrors((prevErrors) => ({
           ...prevErrors,
@@ -35,11 +33,11 @@ const Contact = () => {
     }
 
     if (name === "email") {
-      // Check if Email contains '@'
-      if (!value.includes("@")) {
+      const emailRegex = /^[^@]{3,}@[^@]{5,}\.[^@]+$/;
+      if (!emailRegex.test(value)) {
         setErrors((prevErrors) => ({
           ...prevErrors,
-          email: "Email must contain '@'.",
+          email: "Email must have valid entry.",
         }));
       } else {
         setErrors((prevErrors) => ({
@@ -53,7 +51,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Check if the form is valid
     if (!errors.name && !errors.email && formData.name && formData.email) {
       alert("Form submitted successfully!");
       setFormData({ name: "", email: "", message: "" });
